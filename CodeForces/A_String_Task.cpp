@@ -1,6 +1,6 @@
-// 
-// 
-// 
+// https://codeforces.com/problemset/problem/118/A
+// String Task
+// A2OJ
 #include <bits/stdc++.h>
 #include <sstream>  // for string streams 
 #include <string>  // for string 
