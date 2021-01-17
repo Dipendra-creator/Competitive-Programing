@@ -18,13 +18,21 @@ signed main()
     int value;
     cin >> value;
 
-    if(1<= value <=1000){
-        for(auto i : posibilities){
-            if(value == i || value%i == 0){
+    if(1<= value <=1000)
+    {
+        for(auto i : posibilities)
+        {
+            if(value == i || value%i == 0)
+            {
                 cout << "YES";
                 break;
-            }else{
-                if(i == 777){
+            }
+            else
+            {
+                /*If till i is not equal to 777 above condition then
+                at the end of loop it will print "No" */
+                if(i == 777)
+                {
                     cout << "NO";
                 }
             }
