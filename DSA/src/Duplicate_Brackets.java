@@ -15,7 +15,7 @@ public class Duplicate_Brackets {
                     return;
                 }
                 else {
-                     while (st.peek() == '('){
+                     while (st.peek() != '('){
                          st.pop();
                      }
                      st.pop();
