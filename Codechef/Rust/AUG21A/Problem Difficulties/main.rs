@@ -24,7 +24,7 @@ fn main() {
     let t: i32 = int_input();
 
     for _i in 0..t {
-        let array = int_space_input();
+        let mut array = int_space_input();
 
         let hash_set: HashSet<i32> = array.iter().cloned().collect();
 
@@ -36,10 +36,17 @@ fn main() {
             println!("{}", '2');
         }
         else if len_of_set == 3 {
-            println!("{}", '1');
+            println!("{}", '2');
         }
         else if len_of_set == 2 {
-            println!("{}", '1');
+            array.sort();
+            let b = array[0];
+            if array.iter().filter(|&n| *n == b).count() == 2 {
+                println!("{}", '2');
+            }
+            else {
+                println!("{}", '1');
+            }
         }
         else if len_of_set == 1 {
             println!("{}", '0');
